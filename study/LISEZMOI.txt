@@ -1,0 +1,43 @@
+=========================================================================
+TODO
+=========================================================================
+
+CODE
+-> Test logo dans Championnat
+-> Test feuile match dans poule
+-> Ajouter contrôle des données qui ne peuvent pas être modifiées (exemple : idchampionnat, idadherent et idcategorie dans joueur)
+-> Ajouter contrôle sur liste de valeurs (enum dans classes de constantes ?)
+-> Ajouter contrôle d'intégrité avec messages explicites
+-> Produire les entrants de TI (SQL et dTO attendus) à partir d'une même source
+-> Traiter permission et erreur HTTP associée + doc api de l'erreur
+-> Voir dans doc API à ne positionner que les erreurs possibles sur chaque méthode (401, 404)
+
+GENERAL
+-> Inspecter le POM (doute sur nécessité de org.junit.vintage, jcenter-snapshots))
+-> Comment positionner le niveau de trace - INFO / ERROR - Cible debug (trace HTTP + trace SQL + stacktrace) ...
+-> Traiter requête en JPQL (voir championnatRepo)
+-> Rendre test robuste (pouvoir être rejoués après plante)
+-> Comment débrayer les contraintes d'intégrité référentiel
+-> Test TI avec requête SQL d'initialisation
+-> Nécessité des contrôles sur couche de service (null à priori tester par JPA)
+-> Utilisation de Dto génériques avec ModelMapper adaptés à chaque flux JSON (exmeple Championnat.joueurs ou championnat.joueur)
+-> Sauvegarde GIT
+-> Debug HTML et Spring (modif sans redémarrer)
+-> Explorer notions de lazy (pour les compositions), eagier (pour les agrégations) à positionner sur les attributs des entités.
+-> Faire une séquence par élément du domaine
+-> Héritage Service et Controller pour les CRUD
+-> Améliorer codification des erreurs fonctionnelles
+
+=========================================================================
+REMIND 
+=========================================================================
+
+-> H2 Server : java -cp h2-1.4.200.jar org.h2.tools.Server
+-> MessageDto, MessageController liés à Message.html (test de redirection de page html)
+-> Doc swagger (contenu) : http://localhost:8080/api-docs
+-> Doc swagger (UI) : http://localhost:8080/swagger-ui/index.html
+-> Trace HTTP : http://localhost:8080/actuator/httptrace
+-> HEROKU
+	-> heroku plugins:install java
+	-> heroku create --no-remote
+	-> heroku deploy:jar bad-0.0.3-SNAPSHOT.jar -i badApplication.mv.db --app badufolep

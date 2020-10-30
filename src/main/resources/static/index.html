@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Inscription UFOLEP</title>
+		<style>
+			.conteneur {
+				display: flex;
+				justify-content: space-around;
+			}
+			.contenu_1 {
+				width: 25%;
+				padding:2em;
+				text-align: justify;
+				background-image:none;
+				border: solid;
+				border-color: rgb(180,0,0);
+			}
+			.contenu_2 {
+				width: 25%;
+				padding:2em;
+				text-align: justify;
+				background-image:none;
+				border: none;	
+			}
+			.contenu_3 {
+				padding:2em;
+				margin: auto;
+				margin-top: 2em;
+				text-align: justify;
+				background-image:radial-gradient(rgb(230,230,230), white);
+				border: none;
+			}
+			h1 {
+				font-weight: bold;
+				font-size : 20px;
+			}
+			p {
+				color : red;
+				text-align : center;
+				font-family : monospace;
+				font-weight: bold;
+				font-size : 40px;
+			}
+			.image {
+				text-align: center;
+				background-image:none;
+				border: none;
+				margin-top: 2em;
+				margin-bottom: 2em;	
+			}
+			.image2 {
+				text-align: center;
+				background-image:none;
+				border: none;
+				margin-top: 2em;
+				margin-bottom: 2em;
+				margin-right: 5em;	
+			}
+			[role="button"] {
+				background-color: green;
+				border-color: rgb(0,180,0);
+				padding: 2em;
+				width: 90%;
+				border-width: 3px;
+				text-align: center;
+				font-weight: bold;
+				margin-left: 2em;
+			}
+			[role="button"][aria-pressed="true"] {
+				background-color: red;
+				border-color: rgb(180,0,0);
+			}	
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script type="text/JavaScript">
+			var inscrit = false;
+			function setInscription() {
+				inscrit = !inscrit;
+				var data = {idPlateau: 1, idJoueur: 3, inscrit: inscrit};
+				$.ajax({
+					url: "plateaux/inscriptions",
+					type: 'POST',
+					data: JSON.stringify(data),
+					contentType: "application/json; charset=utf-8",
+					dataType: "json",
+					success: function(result) {
+						inscrit = result.inscrit;
+						document.getElementById("inscriptionsButton").setAttribute("aria-pressed", inscrit);
+						document.getElementById("inscriptionsButton").innerHTML = inscrit ? "Se désinscrire" : "S'inscrire";
+				}});	
+			}
+			function getInscription() {
+				$.ajax({
+					url: "plateaux/1/joueurs/3/inscriptions",
+					success: function(result) {
+						inscrit = result.inscrit;
+						document.getElementById("inscriptionsButton").setAttribute("aria-pressed", inscrit);
+						document.getElementById("inscriptionsButton").innerHTML = inscrit ? "Se désinscrire" : "S'inscrire";
+				}});	
+			}
+		</script>
+	</head>
+
+	<body>
+		<body onload="getInscription()"> 
+		<div class = "conteneur">
+			<div class = "contenu_1">
+				<div class = "contenu_3">
+					<h1>Nom Prénom</h1> <p>Dechartre Colin</p>
+				</div>
+				<div class = "contenu_3">
+					<h1>Plateau</h1> <p>1</p>
+				</div>
+				<div class = "contenu_3">	
+					<h1>Catégorie</h1> <p>Smash 2</p>
+				</div>
+				</br>
+				<button id="inscriptionsButton" role="button" onclick="setInscription()"></button>
+			</div>
+			<div class = "contenu_2">
+				<div class = "image">
+					<img src = "IMG/badmin.jpg" width="80%">
+				</div>
+				<div class = "image2">
+					<img src = "IMG/logoufolep44.jpg" width="110%">
+				</div>		
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
