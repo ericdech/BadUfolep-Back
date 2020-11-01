@@ -1,0 +1,20 @@
+{
+	"configurations": [
+		{
+            "type": "java",
+            "name": "H2 Server",
+            "request": "launch",
+            "mainClass": "org.h2.tools.Server"
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-BadApplication<bad>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"mainClass": "org.ufolep.bad.BadApplication",
+			"projectName": "bad",
+			"args": ""
+		}
+	]
+}
