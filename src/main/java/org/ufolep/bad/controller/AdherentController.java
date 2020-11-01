@@ -53,7 +53,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public class AdherentController {
 
 	// Services
-	private final AdherentService adherentService;
+	private fina AdherentService adherentService;
 	private final ClubService clubService;
 
 	// Model mapper
