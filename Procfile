@@ -1,0 +1,1 @@
+web: java -Dserver.port=$PORT -jar bad-0.0.3-SNAPSHOT.jar
