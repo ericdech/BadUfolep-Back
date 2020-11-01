@@ -161,7 +161,7 @@ class AdherentControllerTest {
 		AdherentDto adherent = new AdherentDto();
 		adherent.setIdAdherent(1);
 		adherent.setPseudo("COCO");
-		adherent.setPassword("COCO1");
+		adherent.setPassword("COCO");
 		adherent.setNom("DECHARTRE");
 		adherent.setPrenom("Colin");
 		adherent.setDateNaissance(LocalDate.of(2003, 6, 16));
