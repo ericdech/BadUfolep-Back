@@ -20,9 +20,9 @@ import io.swagger.v3.oas.annotations.info.License;
 			name = "Apache 2.0",
 			url = "http://www.apache.org/licenses/LICENSE-2.0.html")))
 @SpringBootApplication
-public class BadApplication {
+public class BadUfolepApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BadApplication.class, args);
+		SpringApplication.run(BadUfolepApplication.class, args);
 	}
 }

@@ -35,7 +35,7 @@ REMIND
 -> H2 Server : java -cp h2-1.4.200.jar org.h2.tools.Server
 -> MessageDto, MessageController liés à Message.html (test de redirection de page html)
 -> Doc swagger (contenu) : http://localhost:8080/api-docs
--> Doc swagger (UI) : http://localhost:8080/swagger-ui/index.html
+-> Doc swagger (UI) : http://localhost:8080/swagger-ui.html
 -> Trace HTTP : http://localhost:8080/actuator/httptrace
 -> HEROKU
 	-> heroku plugins:install java
