@@ -16,9 +16,9 @@
 
 	<version>0.0.3-SNAPSHOT</version>
 
-	<name>bad</name>
+	<name>BadUfolep</name>
 
-	<description>Demo project for Spring Boot</description>
+	<description>Gestion du championnat départemental UFOLEP de badminton jeune</description>
 
 	<profiles>
 	    <profile>
@@ -60,11 +60,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-		</dependency>
-
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-thymeleaf</artifactId>
 		</dependency>
 
 		<dependency>
