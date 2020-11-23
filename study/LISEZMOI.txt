@@ -13,7 +13,6 @@ CODE
 -> Voir dans doc API à ne positionner que les erreurs possibles sur chaque méthode (401, 404)
 
 GENERAL
--> Inspecter le POM (doute sur nécessité de org.junit.vintage, jcenter-snapshots))
 -> Comment positionner le niveau de trace - INFO / ERROR - Cible debug (trace HTTP + trace SQL + stacktrace) ...
 -> Traiter requête en JPQL (voir championnatRepo)
 -> Rendre test robuste (pouvoir être rejoués après plante)
@@ -21,7 +20,6 @@ GENERAL
 -> Test TI avec requête SQL d'initialisation
 -> Nécessité des contrôles sur couche de service (null à priori tester par JPA)
 -> Utilisation de Dto génériques avec ModelMapper adaptés à chaque flux JSON (exmeple Championnat.joueurs ou championnat.joueur)
--> Sauvegarde GIT
 -> Debug HTML et Spring (modif sans redémarrer)
 -> Explorer notions de lazy (pour les compositions), eagier (pour les agrégations) à positionner sur les attributs des entités.
 -> Faire une séquence par élément du domaine
@@ -33,7 +31,6 @@ REMIND
 =========================================================================
 
 -> H2 Server : java -cp h2-1.4.200.jar org.h2.tools.Server
--> MessageDto, MessageController liés à Message.html (test de redirection de page html)
 -> Doc swagger (contenu) : http://localhost:8080/api-docs
 -> Doc swagger (UI) : http://localhost:8080/swagger-ui.html
 -> Trace HTTP : http://localhost:8080/actuator/httptrace
