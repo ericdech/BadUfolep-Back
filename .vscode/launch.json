@@ -8,22 +8,22 @@
 		},
 		{
 			"type": "java",
-			"name": "Spring Boot-BadApplication<bad>",
-			"request": "launch",
-			"cwd": "${workspaceFolder}",
-			"console": "internalConsole",
-			"mainClass": "org.ufolep.bad.BadApplication",
-			"projectName": "bad",
-			"args": ""
-		},
-		{
-			"type": "java",
 			"name": "Spring Boot-BadUfolepApplication<bad>",
 			"request": "launch",
 			"cwd": "${workspaceFolder}",
 			"console": "internalConsole",
 			"mainClass": "org.ufolep.bad.BadUfolepApplication",
 			"projectName": "bad",
+			"args": ""
+		},
+		{
+			"type": "java",
+			"name": "Spring Boot-BadUfolepApplication<BadUfolep>",
+			"request": "launch",
+			"cwd": "${workspaceFolder}",
+			"console": "internalConsole",
+			"mainClass": "org.ufolep.bad.BadUfolepApplication",
+			"projectName": "BadUfolep",
 			"args": ""
 		}
 	]
