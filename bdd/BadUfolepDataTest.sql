@@ -7,6 +7,7 @@ DELETE FROM CATEGORIE;
 DELETE FROM ADHERENT;
 DELETE FROM CLUB;
 DELETE FROM CHAMPIONNAT;
+ALTER SEQUENCE HIBERNATE_SEQUENCE RESTART WITH 10;
 INSERT INTO CHAMPIONNAT (idChampionnat, ucChampionnat, llChampionnat, nbjournee, statut) 
 VALUES (1, 'UC1', 'LL1', 6, 'I');
 INSERT INTO CLUB (idClub, ucClub, llClub, refFederation, nomSalle, adresse1Salle, adresse2Salle, villeSalle, email, invitationJoueurAutomatique)
