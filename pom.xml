@@ -20,7 +20,7 @@
 
 	<description>Gestion du championnat départemental UFOLEP de badminton jeune</description>
 
-	<profiles>
+	<!--profiles>
 	    <profile>
 			<id>dev</id>
 			<properties>
@@ -42,7 +42,7 @@
 				<spring.profiles.active>prod</spring.profiles.active>
 			</properties>
 		</profile>
-	</profiles>
+	</profiles-->
 
 	<properties>
 		<java.version>1.8</java.version>
