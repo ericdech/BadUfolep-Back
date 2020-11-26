@@ -38,3 +38,8 @@ REMIND
 	-> heroku plugins:install java
 	-> heroku create --no-remote
 	-> heroku deploy:jar bad-0.0.3-SNAPSHOT.jar -i badApplication.mv.db --app badufolep
+-> Liste des modifications post-génération DDL par StarUML : 
+	-> Gérer l'ordre de suppression des tables (SET FOREIGN_KEY_CHECKS ne marche pas)
+	-> Supprimer FOREIGN_KEY_CHECKS
+	-> Ajouter CREATE SEQUENCE HIBERNATE_SEQUENCE;
+	-> Ajouter les valeurs par défaut

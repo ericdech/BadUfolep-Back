@@ -21852,7 +21852,7 @@
 								"$ref": "AAAAAAFnBCfqhG7HRnk="
 							},
 							"name": "LOGOCHAMPIONNAT",
-							"type": "BINARY",
+							"type": "BYTEA",
 							"length": 0,
 							"nullable": true
 						},
@@ -22878,8 +22878,7 @@
 								"$ref": "AAAAAAFnBEUgqIAJZCE="
 							},
 							"name": "ANNEENAISSANCEMIN",
-							"type": "INTEGER",
-							"length": "0"
+							"type": "INTEGER"
 						}
 					]
 				},
@@ -23868,7 +23867,7 @@
 								"$ref": "AAAAAAFnDPXSL0MNzzg="
 							},
 							"name": "FEUILLEMATCH",
-							"type": "BINARY",
+							"type": "BYTEA",
 							"length": 0,
 							"nullable": true
 						}
