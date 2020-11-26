@@ -25,9 +25,6 @@ GENERAL
 -> Faire une séquence par élément du domaine
 -> Héritage Service et Controller pour les CRUD
 -> Améliorer codification des erreurs fonctionnelles
--> Traiter problème connexion base Heroku à partir de squirel (problème SSL ?)
--> Comprendre comment est paramétré la base Heroku et modifier le profile prod en conséquence.
--> Voir si les profiles maven ont encore un intérêt (profile courtant potentiellement positionné dans app.prop => PLus simple que POM)
 
 =========================================================================
 REMIND 
